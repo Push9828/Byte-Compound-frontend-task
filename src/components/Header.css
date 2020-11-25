@@ -1,0 +1,22 @@
+.header {
+  background-image: url(../assets/desktop/bg-pattern-header.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.logo {
+  padding: 3rem 0rem 5rem 12rem;
+}
+
+.icon-moon {
+  position: absolute;
+  top: 3.4rem;
+  left: 82rem;
+}
+
+.icon-sun {
+  position: absolute;
+  top: 3.2rem;
+  left: 76rem;
+}
