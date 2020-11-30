@@ -2,21 +2,40 @@
   background-image: url(../assets/desktop/bg-pattern-header.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.header-container {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   padding: 3rem 0rem 5rem 12rem;
 }
 
-.icon-moon {
-  position: absolute;
-  top: 3.4rem;
-  left: 82rem;
+@media (max-width: 800px) {
+  .header {
+    background-image: url(../assets/tablet/bg-pattern-header.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .logo {
+    padding: 3rem 0rem 5rem 5rem;
+  }
 }
 
-.icon-sun {
-  position: absolute;
-  top: 3.2rem;
-  left: 76rem;
+@media (max-width: 500px) {
+  .header {
+    background-image: url(../assets/mobile/bg-pattern-header.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .logo {
+    padding: 3rem 0rem 5rem 5rem;
+  }
 }

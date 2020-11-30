@@ -3,7 +3,6 @@
   display: inline-block;
   width: 48px;
   height: 24px;
-  float: right;
   margin: 3rem 15rem 5rem 0rem;
 }
 
@@ -37,7 +36,7 @@
   transition: 0.4s;
 }
 
-.slider:before::hover {
+.slider:hover:before {
   background-color: #939bf4;
 }
 
@@ -60,4 +59,25 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.icon-sun {
+  position: absolute;
+  margin: 3rem -2rem;
+}
+
+.icon-moon {
+  position: absolute;
+  margin: 0.3rem 0rem 5rem 4rem;
+}
+
+@media (max-width: 800px) {
+  .switch {
+    margin: 3rem 8rem 5rem 0rem;
+  }
+}
+@media (max-width: 500px) {
+  .switch {
+    margin: 3rem 5rem 5rem 0rem;
+  }
 }
