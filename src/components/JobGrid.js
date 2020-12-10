@@ -2,11 +2,11 @@ import React from 'react';
 import JobItem from './JobItem';
 import { JobGridStyled } from './JobGrid.styled';
 
-const JobGrid = ({ items, theme }) => {
+const JobGrid = ({ data, theme }) => {
   return (
     <div className='container'>
       <JobGridStyled>
-        {items.map((item) => (
+        {data.map((item) => (
           <JobItem key={item.id} item={item} theme={theme} />
         ))}
       </JobGridStyled>
